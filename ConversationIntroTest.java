@@ -90,6 +90,8 @@ public class ConversationIntroTest {
     System.out.println("Passed mirrorWord test #2.");
 		assertEquals("mirrorWord #3", "test", ci.mirrorWord("test"));
     System.out.println("Passed mirrorWord test #3.");
+		assertEquals("mirrorWord #4", "you love I", ci.mirrorWord("I love you"));
+    System.out.println("Passed mirrorWord test #4.");
 	}
 
       	

@@ -111,8 +111,15 @@ public class ConversationIntro {
   
   /** Returns its input, unless it is "I" or "you", which switch */
   public String mirrorWord(String s) {
-    return s;
+    if (s == "I"){
+      return "you"; }
+    if (s == "you"){
+      return "I";
+    }
+
+   return s;
   }
+
 
   /*
    *  Example D:  wholeNumbers
@@ -125,9 +132,9 @@ public class ConversationIntro {
   /** Returns an array of whole numbers up to n */
   public static int[] wholeNumbers(int n) {
     int[] arr = new int[n]; // allocate space for the array
-    //for (int i = 0; i < n; i++) {
-    //  arr[i] = i+1;
-    //}
+    for (int i = 0; i < n; i++) {
+     arr[i] = i+1;
+    }
     return arr;
   }
 
